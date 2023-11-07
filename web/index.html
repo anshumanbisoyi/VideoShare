@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="assets/js/amazon-chime-sdk.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/vid.css" />
+    <title>VideoShare</title>
+  </head>
+<body style="background-color: black">
+		<div style="width: 100%;  text-align:center; margin-bottom: 10px;">
+			<div style="color:greenyellow ;font-size: 35px;font-weight: bold; background-color: black;">VideoShare</div>
+		</div>
+		<div style="width: 100%; text-align: center; margin-top :10px;margin-bottom: 10px;">
+			<label style="color:lightslategray;font-size: 20px;align-items: center;">Fostering Team Synergy, Anytime, Everywhere</label>
+			<p style="font-size: 10x;color: lightgray;margin-top: 8px;margin-bottom: 8px;">Enable your team with user-friendly web conferencing and collaboration platform.</p>
+		</div>
+		<audio id="meeting-audio"></audio>
+		<div class="meet-image" style="display:flex; justify-content: center;margin-top: 10px;margin-bottom: 10px; border-radius:10px;">
+		  <img src="https://www.gstatic.com/meet/google_meet_marketing_ongoing_meeting_grid_427cbb32d746b1d0133b898b50115e96.jpg" style="width:1000px; height: 600px;border-radius:15px; " alt="Google Meet Image" />
+		</div>
+		<div style="width: 100%; color:white; text-align:center; margin-top: 10px;margin-bottom: 10px;">
+			User Name: <input id="username" name="username" type="text" style="height:28px ;border-radius: 15px;" value=""/><br>
+			<div style="padding-top:10px;">
+            <button type="button" style="border-radius: 15px;" id="start-button">Start Meeting</button>
+			<button type="button" style="border-radius: 15px;" id="stop-button">Stop Meeting</button>
+			<button type="button" style="border-radius: 15px;" id="exit-button">Exit Meeting</button>
+			<button type="button" style="border-radius: 15px;" id="share-button">Screen Share</button>
+			</div>
+			
+		</div>
+		<div class="meet-items" style="display:none" >
+	    <b style="color:green;">Meeting Id:</b> <label style="color:white" id="meeting-Id"></label><br>
+        <b style="color:green;">Meeting Link:</b> <label style="color:white" id="meeting-link"></label><br>
+		<b style="color:green;">Attendees:</b> <label style="color:white" id="Attendees"></label>	
+		</div>
+		<div id="video-list">
+		<script src="assets/js/vid.js"></script>
+</body>
+</html>
